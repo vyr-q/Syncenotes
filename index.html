@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Lockport Map</title>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header><h1>🔷 Lockport Map</h1><span id="status">Guest</span></header>
+<div id="suggestionBanner">Have a suggestion? Email <a href="mailto:vyrq.gov@gmail.com">vyrq.gov@gmail.com</a></div>
+<main>
+<section id="mapPage" class="page active"><div id="map"></div></section>
+<section id="adminPage" class="page">
+  <div class="card">
+    <h2>Admin</h2>
+    <p>This starter admin panel stores approved locations in this browser. For a public app, connect Firebase before publishing.</p>
+    <input id="adminName" placeholder="Location name">
+    <input id="adminAddress" placeholder="Address">
+    <textarea id="adminDescription" placeholder="Description"></textarea>
+    <button id="addLocation">Add Location</button>
+    <h3>Important Locations</h3>
+<p class="admin-note">No important locations are pre-loaded. You can build the list and add them here.</p>
+<div id="locationList"></div>
+  </div>
+</section>
+</main>
+<nav>
+<button data-page="mapPage">🗺️<span>Map</span></button>
+<button data-page="adminPage">🔒<span>Admin</span></button>
+</nav>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script src="app.js"></script>
+</body></html>
